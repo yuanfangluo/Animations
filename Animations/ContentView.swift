@@ -7,42 +7,45 @@
 
 import SwiftUI
 
-struct Animation: Identifiable {
-    var id = UUID()
-    let text: String
+enum Destination: String, CaseIterable, Identifiable {
+    var id: String {
+        rawValue
+    }
+    
+    case heartPulse, spinning, exploding, rollinRainbow, dragNDropDots, dancingDots
+    
+    @ViewBuilder
+    static func view(forSelection selection: Destination) -> some View {
+        switch selection {
+        case .heartPulse:
+            HeartPulseView()
+        case .spinning:
+            SpinningView()
+        case .exploding:
+            ExplodingView()
+        case .rollinRainbow:
+            RollinRainbowView()
+        case .dragNDropDots:
+            DragNDropDotsView()
+        case .dancingDots:
+            DancingDotsView()
+        }
+    }
+    
 }
 
 struct ContentView: View {
     
-//    let animations = [
-//        Animation(text: "HeartPluse", dest: {
-//            HeartPulseView()
-//        }),
-//        Animation(text: "SpinningView", dest: {
-//            SpinningView()
-//        })
-//    ]
-    
     var body: some View {
-            NavigationStack {
-                List{
-                    NavigationLink {
-                        HeartPulseView()
-                    } label: {
-                        Text("HeartPluse")
-                    }
-                    NavigationLink {
-                        SpinningView()
-                    } label: {
-                        Text("SpinningView")
-                    }
-                    NavigationLink {
-                        ExplodingView()
-                    } label: {
-                        Text("ExplodingView")
-                    }
+        NavigationStack {
+            List(Destination.allCases){ dest in
+                NavigationLink {
+                    Destination.view(forSelection: dest)
+                } label: {
+                    Text(dest.rawValue)
                 }
             }
+        }
     }
 }
 

@@ -15,6 +15,9 @@
 		04C5DBEF287590EE00F61E53 /* ShapeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5DBEE287590EE00F61E53 /* ShapeButtonStyle.swift */; };
 		04C5DBF12875963900F61E53 /* SpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5DBF02875963900F61E53 /* SpinningView.swift */; };
 		04C5DBF32875A32900F61E53 /* ExplodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5DBF22875A32900F61E53 /* ExplodingView.swift */; };
+		04C5DBF62875A8ED00F61E53 /* RollinRainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5DBF52875A8ED00F61E53 /* RollinRainbow.swift */; };
+		04C5DBF92875AF7A00F61E53 /* DragNDropDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5DBF72875AF7A00F61E53 /* DragNDropDots.swift */; };
+		04C5DBFA2875AF7A00F61E53 /* DancingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5DBF82875AF7A00F61E53 /* DancingDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		04C5DBEE287590EE00F61E53 /* ShapeButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButtonStyle.swift; sourceTree = "<group>"; };
 		04C5DBF02875963900F61E53 /* SpinningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinningView.swift; sourceTree = "<group>"; };
 		04C5DBF22875A32900F61E53 /* ExplodingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplodingView.swift; sourceTree = "<group>"; };
+		04C5DBF52875A8ED00F61E53 /* RollinRainbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollinRainbow.swift; sourceTree = "<group>"; };
+		04C5DBF72875AF7A00F61E53 /* DragNDropDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragNDropDots.swift; sourceTree = "<group>"; };
+		04C5DBF82875AF7A00F61E53 /* DancingDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DancingDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,10 @@
 		04C5DBF42875A33400F61E53 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				04C5DBF52875A8ED00F61E53 /* RollinRainbow.swift */,
 				04C5DBEC287590B600F61E53 /* HeartPulse.swift */,
+				04C5DBF82875AF7A00F61E53 /* DancingDots.swift */,
+				04C5DBF72875AF7A00F61E53 /* DragNDropDots.swift */,
 				04C5DBF22875A32900F61E53 /* ExplodingView.swift */,
 				04C5DBF02875963900F61E53 /* SpinningView.swift */,
 			);
@@ -158,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C5DBED287590B600F61E53 /* HeartPulse.swift in Sources */,
+				04C5DBFA2875AF7A00F61E53 /* DancingDots.swift in Sources */,
+				04C5DBF92875AF7A00F61E53 /* DragNDropDots.swift in Sources */,
 				04C5DBE128758FCC00F61E53 /* ContentView.swift in Sources */,
 				04C5DBF12875963900F61E53 /* SpinningView.swift in Sources */,
+				04C5DBF62875A8ED00F61E53 /* RollinRainbow.swift in Sources */,
 				04C5DBF32875A32900F61E53 /* ExplodingView.swift in Sources */,
 				04C5DBDF28758FCC00F61E53 /* AnimationsApp.swift in Sources */,
 				04C5DBEF287590EE00F61E53 /* ShapeButtonStyle.swift in Sources */,
